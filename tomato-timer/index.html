@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta content-type="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>番茄计时</title>
+  <link crossorigin="anonymous" media="all" rel="stylesheet" href="./style/index.css" />
+</head>
+
+<body>
+  <header id="header">
+    <h1>番茄计时器</h1>
+    <div class="button mode">休息</div>
+    <div class="button log">更新日志</div>
+  </header>
+  <div id="main">
+    <img id="title-pic" src="https://s11.ax1x.com/2024/01/05/pixySw6.jpg" title="番茄计时器" />
+    <div class="time-show">
+      <div id="minutes">25</div>
+      <div class="dot">&nbsp;:&nbsp;</div>
+      <div id="seconds">00</div>
+    </div>
+  </div>
+  <div class="controller">
+    <div class="button reset-button">重置</div>
+    <div class="button ctr-time-button">开始</div>
+  </div>
+
+  <div class="log-container">
+    <h2 class="log-header">更新日志：</h2>
+    <div class="log-title">于2024年1月5日开发首版,内容：</div>
+    <section class="log-content">
+      <div class="log-content-item">1. 基本界面的搭建。</div>
+      <div class="log-content-item">2. 支持番茄工作法里的 25 分钟工作时间的倒计时。</div>
+      <div class="log-content-item">3. 支持番茄工作法里的 5 分钟休息时间的倒计时。</div>
+      <div class="log-content-item">4. 支持倒计时的启动功能。</div>
+      <div class="log-content-item">5. 支持倒计时的暂停功能。</div>
+      <div class="log-content-item">6. 支持倒计时的重置功能。</div>
+    </section>
+    <div class="log-title">2024.1.6 更新内容：</div>
+    <section class="log-content">
+      <div class="log-content-item">1.修复更改模式后的重置功能问题。</div>
+      <div class="log-content-item">2.更新日志样式优化。</div>
+    </section>
+    <div class="log-title">2024.1.7 更新内容：</div>
+    <section class="log-content">
+      <div class="log-content-item">1.将更新日志内容改为弹框。</div>
+      <div class="log-content-item">2.支持通过点击“更新日志”展示更新日志弹框。</div>
+      <div class="log-content-item">2.支持通过点击遮罩层隐藏更新日志弹框。</div>
+    </section>
+  </div>
+
+  <div id="mask"></div>
+
+  <script src="./js/utils.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
